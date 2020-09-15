@@ -51,7 +51,7 @@ def create(request):
     else:
         #단순히 입력받을 수 있는 form을 띄어줘라
         form = NewBlog()
-        return render(request, 'index.html', {'form':form})
+        return render(request, 'create.html', {'form':form})
 
 def create_article(request):
     article = Article()
